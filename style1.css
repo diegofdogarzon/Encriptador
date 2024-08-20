@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: 'inter';
+    background-color: #F3F5FC;
+    padding: 5%;
+}
+
+.header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 48px;
+    color: #274c77;
+    margin: 0;
+}
+
+.logoalura {
+    height: 65px;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+textarea {
+    width: 45%;
+    height: 300px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'inter';
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    resize: none;
+    outline: none;
+    color: #000000;
+}
+
+textarea::placeholder {
+    color: #000000;
+    opacity: 0.7;
+}
+
+.buttons {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#encrypt-btn {
+    background-color: #274c77;
+    color: #ffffff;
+}
+
+#encrypt-btn:hover {
+    background-color: #1e3a57;
+}
+
+#decrypt-btn {
+    background-color: #ffffff;
+    color: #274c77;
+    border: 2px solid #274c77;
+}
+
+#decrypt-btn:hover {
+    background-color: #e7eff6;
+}
+
+#copy-btn {
+    background-color: #cccccc;
+    color: #000000;
+
+}
+
+#copy-btn:hover {
+    background-color: #bbbbbb;
+}
+
+.output {
+    width: 45%;
+    height: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+}
+
+#output-text {
+    font-size: 18px;
+    color: #274c77;
+    line-height: 1.6;
+}
+
+.note {
+    font-size: 14px;
+    color: #274c77;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.mensaje_minuscula{
+    margin-left: 20px;
+    color: gray
+}
+.note::before {
+    content: "!";
+    font-size: 16px;
+    color: #274c77;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.piedepagina {
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    color: gray
+}
+
+@media (min-width: 480px)and (max-width: 800px) {
+    
+    .buttons {
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+}
+
+}
